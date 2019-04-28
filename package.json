@@ -1,0 +1,61 @@
+{
+  "name": "simple-slider",
+  "version": "0.0.1",
+  "description": "Simple slider",
+  "main": "src/index.tsx",
+  "scripts": {
+    "build": "webpack --mode production",
+    "lint": "tslint -c tslint.json 'src/**/*.{ts,tsx}'",
+    "lint:fix": "tslint -c tslint.json --fix 'src/**/*.{ts,tsx}'",
+    "start": "webpack-dev-server --mode development",
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "npm run type-check -- --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Alexis-Dk/Simple-slider.git"
+  },
+  "keywords": [
+    "react",
+    "typescript"
+  ],
+  "author": {
+    "name": "Alexey Druzik",
+    "email": "alexeydruzik@gmail.com",
+    "url": "https://github.com/Alexis-Dk"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Alexis-Dk/Simple-slider/issues"
+  },
+  "homepage": "https://github.com/Alexis-Dk/Simple-slider.git#readme",
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-fade": "^1.1.1",
+    "react-images": "^0.5.19",
+    "react-images-extended": "^0.6.4",
+    "react-images-zoom": "^1.0.7",
+    "react-reveal": "^1.2.2",
+    "react-slideshow-image": "^1.1.5"
+  },
+  "devDependencies": {
+    "@types/node": "^11.13.8",
+    "@types/react": "^16.8.14",
+    "@types/react-dom": "^16.8.4",
+    "copy-webpack-plugin": "^5.0.3",
+    "dotenv": "^7.0.0",
+    "hard-source-webpack-plugin": "^0.13.1",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "ts-loader": "^5.4.4",
+    "tslint": "^5.16.0",
+    "tslint-loader": "^3.5.4",
+    "tslint-react": "^4.0.0",
+    "typescript": "^3.4.5",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.1",
+    "webpack-dev-server": "^3.3.1",
+    "webpackbar": "^3.2.0"
+  }
+}
