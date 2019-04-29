@@ -80,12 +80,12 @@ class Form extends React.Component<{}, FormState> {
     const { address, amount } = this.state;
     return (
       <React.Fragment>
-          <Slider>
-              <img src="https://livewallpaper.info/wp-content/uploads/2016/06/wallpapers-cool8.jpg" />
-              <img src="https://livewallpaper.info/wp-content/uploads/2016/06/wallpapers-cool7.jpg" />
-              <img src="https://livewallpaper.info/wp-content/uploads/2016/06/wallpapers-cool3.jpg" />
-              <div><h2>Slide4</h2>Slide 4 is plain</div>
-          </Slider>
+          <Slider images={[
+              "https://livewallpaper.info/wp-content/uploads/2016/06/wallpapers-cool8.jpg",
+              "https://livewallpaper.info/wp-content/uploads/2016/06/wallpapers-cool7.jpg",
+              "https://livewallpaper.info/wp-content/uploads/2016/06/wallpapers-cool3.jpg"
+          ]}
+          />
       </React.Fragment>
     );
   }
