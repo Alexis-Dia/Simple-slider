@@ -50,13 +50,15 @@ module.exports = (_, { mode }) => ({
   devServer: { historyApiFallback: true, open: true, port },
   resolve: { extensions: ['.ts', '.tsx', '.js'] },
   plugins: [
-    new CopyWebpackPlugin([{
-        from: path.resolve(__dirname, 'public/favicon.ico'),
-        from: path.resolve(__dirname, 'public/logo.png') }]),
-    new CopyWebpackPlugin([{from: path.resolve(__dirname, 'public/pic3.png') }]),
-    new CopyWebpackPlugin([{from: path.resolve(__dirname, 'public/pic5.png') }]),
-    new CopyWebpackPlugin([{from: path.resolve(__dirname, 'public/pic6.png') }]),
-    new CopyWebpackPlugin([{from: path.resolve(__dirname, 'public/pic7.jpg') }]),
+    new CopyWebpackPlugin([{from: path.resolve(__dirname, 'public/favicon.ico') }]),
+    new CopyWebpackPlugin([{from: path.resolve(__dirname, 'public/Capture1.JPG') }]),
+    new CopyWebpackPlugin([{from: path.resolve(__dirname, 'public/Capture2.JPG') }]),
+    new CopyWebpackPlugin([{from: path.resolve(__dirname, 'public/Capture3.JPG') }]),
+    new CopyWebpackPlugin([{from: path.resolve(__dirname, 'public/Capture4.JPG') }]),
+    new CopyWebpackPlugin([{from: path.resolve(__dirname, 'public/Capture5.JPG') }]),
+    new CopyWebpackPlugin([{from: path.resolve(__dirname, 'public/Capture6.JPG') }]),
+    new CopyWebpackPlugin([{from: path.resolve(__dirname, 'public/Capture7.JPG') }]),
+    new CopyWebpackPlugin([{from: path.resolve(__dirname, 'public/Capture8.JPG') }]),
     new HardSourceWebpackPlugin(),
     new HtmlWebPackPlugin({
       template: path.resolve(__dirname, 'public/index.html'),

@@ -30,15 +30,11 @@
   },
   "homepage": "https://github.com/Alexis-Dk/Simple-slider.git#readme",
   "dependencies": {
+    "css-loader": "^2.1.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-fade": "^1.1.1",
-    "react-images": "^0.5.19",
-    "react-images-extended": "^0.6.4",
-    "react-images-zoom": "^1.0.7",
-    "react-reveal": "^1.2.2",
-    "react-slideshow-image": "^1.1.5",
-    "react-scroll-wheel-handler": "^1.0.7"
+    "react-scroll-wheel-handler": "^1.0.7",
+    "style-loader": "^0.23.1"
   },
   "devDependencies": {
     "@types/node": "^11.13.8",

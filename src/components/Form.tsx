@@ -5,22 +5,7 @@ export interface FormState {
   [key: string]: number | string;
 }
 
-const zoomOutProperties = {
-    duration: 5000,
-    transitionDuration: 500,
-    infinite: true,
-    indicators: true,
-    scale: 0.4,
-    arrows: true
-}
-
-const images = ['pic5.png'];
-
-
 const defaultState: FormState = {
-  address: '0x',
-  amount: 0,
-  images: ['pic5.png']
 };
 
 const inputStyles = {
@@ -53,37 +38,16 @@ class Form extends React.Component<{}, FormState> {
         });
     }
 
-    gotoPrevious= ()=> {
-        this.setState({
-        });
-    }
-
-    gotoNext= ()=> {
-        this.setState({
-            images: ['pic6.png']
-        });
-    }
-
-    handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    if (event.target.name === 'amount' && event.target.value >= 0) {
-        this.setState({
-            [event.target.name]: event.target.value,
-        })
-    } else if (event.target.name === 'address') {
-        this.setState({
-            [event.target.name]: event.target.value,
-        })
-    }
-  }
-
   render() {
     const { address, amount } = this.state;
     return (
       <React.Fragment>
           <Slider images={[
-              "https://livewallpaper.info/wp-content/uploads/2016/06/wallpapers-cool8.jpg",
-              "https://livewallpaper.info/wp-content/uploads/2016/06/wallpapers-cool7.jpg",
-              "https://livewallpaper.info/wp-content/uploads/2016/06/wallpapers-cool3.jpg"
+              'Capture4.JPG',
+              'Capture5.JPG',
+              'Capture6.JPG',
+              'Capture7.JPG',
+              'Capture8.JPG',
           ]}
           />
       </React.Fragment>
